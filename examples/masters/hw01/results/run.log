@@ -1,0 +1,148 @@
+-------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /private/tmp/econometrics_hw01_sample/results/run.log
+  log type:  text
+ opened on:  15 Sep 2026, 19:22:33
+
+. pwd
+/private/tmp/econometrics_hw01_sample
+
+. display "Stata version: " c(stata_version)
+Stata version: 19.5
+
+. 
+. * 2. 读入数据，只保留本次使用的四个变量（不会改写原文件）
+. * 这里的数据与课程 作业/Data/WAGE1.DTA 完全相同。
+. use "data/WAGE1.DTA", clear
+
+. keep wage educ exper female
+
+. label variable wage   "小时工资（美元）"
+
+. label variable educ   "受教育年限（年）"
+
+. label variable exper  "潜在工作经验（年）"
+
+. label variable female "性别：1=女，0=男"
+
+. 
+. * describe 显示变量名和含义；codebook 帮助了解取值范围。
+. describe
+
+Contains data from data/WAGE1.DTA
+ Observations:           526                  
+    Variables:             4                  16 Sep 1996 15:52
+-------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------
+wage            float   %8.2g                 小时工资（美元）
+educ            byte    %8.0g                 受教育年限（年）
+exper           byte    %8.0g                 潜在工作经验（年）
+female          byte    %8.0g                 性别：1=女，0=男
+-------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. codebook wage educ exper female, compact
+
+Variable   Obs Unique      Mean  Min    Max  Label
+-------------------------------------------------------------------------------
+wage       526    241  5.896103  .53  24.98  小时工资（美元）        
+educ       526     18  12.56274    0     18  受教育年限（年）        
+exper      526     51  17.01711    1     51  潜在工作经验（年）         
+female     526      2  .4790875    0      1  性别：1=女，0=男      
+-------------------------------------------------------------------------------
+
+. 
+. * 3. 先检查缺失，再筛选样本
+. * all showzeros：没有缺失的变量也列出，并把缺失数明确显示为 0。
+. display "筛选前的观察数："
+筛选前的观察数：
+
+. count
+  526
+
+. misstable summarize wage educ exper female, all showzeros
+                                                               Obs<.
+                                                +------------------------------
+               |                                | Unique
+      Variable |     Obs=.     Obs>.     Obs<.  | values        Min         Max
+  -------------+--------------------------------+------------------------------
+          wage |         0         0       526  |    241        .53       24.98
+          educ |         0         0       526  |     18          0          18
+         exper |         0         0       526  |     51          1          51
+        female |         0         0       526  |      2          0           1
+  -----------------------------------------------------------------------------
+
+. 
+. * 任意一个选用变量缺失，就排除该行；不按工资高低等条件进一步筛选。
+. * 本数据四个变量均无缺失，所以本步骤不删除任何观察。
+. drop if missing(wage, educ, exper, female)
+(0 observations deleted)
+
+. display "筛选后的观察数："
+筛选后的观察数：
+
+. count
+  526
+
+. 
+. * 4. 描述统计：样本数、均值、标准差、最小值、中位数、最大值
+. * p50 就是中位数；female 的均值表示女性所占比例。
+. tabstat wage educ exper female, statistics(n mean sd min p50 max) columns(sta
+> tistics) format(%9.3f)
+
+    Variable |         N      Mean        SD       Min       p50       Max
+-------------+------------------------------------------------------------
+        wage |   526.000     5.896     3.693     0.530     4.650    24.980
+        educ |   526.000    12.563     2.769     0.000    12.000    18.000
+       exper |   526.000    17.017    13.572     1.000    13.500    51.000
+      female |   526.000     0.479     0.500     0.000     0.000     1.000
+--------------------------------------------------------------------------
+
+. 
+. * 5. 分布图：横轴是小时工资，纵轴是各工资区间的人数百分比
+. histogram wage, percent width(2) start(0) ///
+>     title("Hourly wage distribution") ///
+>     xtitle("Hourly wage (1976 US dollars)") ytitle("Percent")
+(bin=13, start=0, width=2)
+
+. graph export "results/wage_distribution.png", replace width(1600)
+(file results/wage_distribution.png not found)
+file results/wage_distribution.png written in PNG format
+
+. 
+. * 6. 关系图：每个点是一名劳动者，直线概括教育与工资的样本关联
+. * scatter 后面先写纵轴变量 wage，再写横轴变量 educ。
+. twoway (scatter wage educ) (lfit wage educ), ///
+>     title("Education and hourly wage") ///
+>     xtitle("Years of education") ytitle("Hourly wage (1976 US dollars)") ///
+>     legend(order(1 "Observations" 2 "Fitted line"))
+
+. graph export "results/wage_education.png", replace width(1600)
+(file results/wage_education.png not found)
+file results/wage_education.png written in PNG format
+
+. 
+. * 相关系数帮助概括关联方向；正相关不等于教育提高工资的因果效应。
+. correlate wage educ
+(obs=526)
+
+             |     wage     educ
+-------------+------------------
+        wage |   1.0000
+        educ |   0.4059   1.0000
+
+
+. 
+. * 完成。日志中包含工作目录、变量信息、筛选过程和所有统计结果。
+. display "HW01_COMPLETED"
+HW01_COMPLETED
+
+. log close
+      name:  <unnamed>
+       log:  /private/tmp/econometrics_hw01_sample/results/run.log
+  log type:  text
+ closed on:  15 Sep 2026, 19:22:34
+-------------------------------------------------------------------------------

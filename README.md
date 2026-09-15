@@ -9,7 +9,18 @@
 | 课程 | 作业 | 要求与样本 | 截止时间（北京时间） | 提交 |
 |---|---|---|---|---|
 | 博士计量经济学 | 第一次作业：研究设计 | [作业要求](assignments/doctoral/hw01.md) · [参考样本](assignments/doctoral/第一次作业.md) | 课堂另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=doctoral-hw01.yml)** |
-| 硕士计量经济学 | 待发布 | 后续在本页公布 | 待公布 | 暂未开放 |
+| 硕士计量经济学 | 第一次作业：认识数据与样本关联 | [作业要求](assignments/masters/hw01.md) · [Stata 参考样本](examples/masters/hw01/README.md) | 课堂另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw01.yml)** |
+
+## 硕士第一次作业：认识数据与样本关联
+
+请使用 `作业/Data/WAGE1.DTA`，也可自选数据并说明公开来源。完成以下四项内容：
+
+1. 变量字典、缺失检查和描述性统计。
+2. 一张分布图、一张关系图及生成它们的 do 文件。
+3. 200 字解释，区分样本关联与因果结论。
+4. 运行日志，说明样本筛选和工作目录。
+
+我提供了带中文注释的 [Stata 代码](examples/masters/hw01/main.do)和[完整样本报告](examples/masters/hw01/report.md)。首次使用 Stata 的同学，可以[下载样本](examples/masters/hw01_sample.zip?raw=true)，按[运行说明](examples/masters/hw01/README.md)先完整运行一遍，再逐段理解。
 
 ## 博士第一次作业：写出一份清楚的研究设计
 
@@ -34,7 +45,7 @@
 2. **上传文件。** 点击上方“点击提交作业”，填写学号，选择或拖入 ZIP。保留页面预填的标题，等待文件上传完成。
 3. **确认提交。** 点击 **Submit new issue**（提交）。看到带编号的提交记录，并确认其中有自己的 ZIP 附件，即完成提交。请保留该页面作为回执，无需另外发送链接。
 
-本次作业的压缩包可以很简单：
+博士第一次作业的压缩包可以很简单：
 
 ```text
 2026001001/
@@ -42,6 +53,8 @@
 ```
 
 如果需要说明数据计划、引用资料或已有代码，可在同一文件夹中补充。也可以下载[博士第一次作业模板](templates/博士作业模板.zip?raw=true)，解压后将“学号”文件夹改成自己的完整学号，再填写报告。
+
+硕士第一次作业请同时打包报告、do 文件、两张图和日志，具体结构见[作业要求](assignments/masters/hw01.md)。
 
 请保留学号开头的 0，ZIP 与文件夹使用相同学号。只上传本次作业需要的材料，建议 ZIP 不超过 20 MB。
 

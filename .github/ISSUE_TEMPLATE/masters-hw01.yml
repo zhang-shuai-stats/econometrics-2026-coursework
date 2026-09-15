@@ -1,0 +1,27 @@
+name: "硕士计量经济学 · 第一次作业"
+description: "提交数据检查、两张图、Stata 代码、200 字解释和日志。"
+title: "[masters-hw01] 数据描述与图形作业"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 硕士第一次作业：认识数据与样本关联
+        同学们，请先阅读[作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/masters/hw01.md)。
+        ZIP 内请包含报告、do 文件、两张图和运行日志。截止时间课堂另行通知。
+        填写学号，上传 ZIP，等待上传完成后点击 Submit new issue。
+  - type: input
+    id: student_id
+    attributes:
+      label: "学号"
+      description: "请填写完整学号，与 ZIP 文件名一致，保留开头的 0。"
+      placeholder: "例如 2026001001"
+    validations:
+      required: true
+  - type: upload
+    id: assignment_file
+    attributes:
+      label: "作业文件"
+      description: "请上传一个 学号.zip，建议不超过 20 MB。"
+    validations:
+      required: true
+      accept: ".zip"

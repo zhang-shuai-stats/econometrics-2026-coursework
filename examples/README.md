@@ -1,5 +1,4 @@
-# 示例代码
+# 课程参考样本
 
-后续实证作业需要的 Stata 或 Python 示例将在这里发布。
-
-博士第一次作业以研究设计报告为主，具体要求见[作业说明](../assignments/doctoral/hw01.md)。
+- [硕士第一次作业：WAGE1 与 Stata 入门](masters/hw01/README.md)：中文注释代码、变量字典、描述统计、两张图、200 字解释及真实运行日志。
+- [博士第一次作业：研究设计](../assignments/doctoral/hw01.md)。
