@@ -13,7 +13,7 @@ body:
     id: student_id
     attributes:
       label: "学号"
-      description: "请填写完整学号，与 ZIP 文件名一致，保留开头的 0。"
+      description: "请用完整学号命名文件夹和 ZIP 文件。"
       placeholder: "例如 2026001001"
     validations:
       required: true
