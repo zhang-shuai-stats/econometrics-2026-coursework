@@ -1,0 +1,27 @@
+name: "博士计量经济学 · 第一次作业"
+description: "提交你的研究设计报告：填写学号，上传学号.zip。"
+title: "[doctoral-hw01] 研究设计作业"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 博士第一次作业：研究设计
+        同学们，请先阅读[作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/doctoral/hw01.md)和[参考样本](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/doctoral/第一次作业.md)。
+        本次提交研究设计报告即可，不要求先完成回归。截止时间课堂另行通知。
+        保留默认标题，填写学号并上传 ZIP，最后点击 Submit new issue。
+  - type: input
+    id: student_id
+    attributes:
+      label: "学号"
+      description: "请填写完整学号，与 ZIP 文件名一致，保留开头的 0。"
+      placeholder: "例如 2026001001"
+    validations:
+      required: true
+  - type: upload
+    id: assignment_file
+    attributes:
+      label: "作业文件"
+      description: "请上传一个 学号.zip，内含 PDF 或 Markdown 报告，建议不超过 20 MB。等待上传完成后再提交。"
+    validations:
+      required: true
+      accept: ".zip"

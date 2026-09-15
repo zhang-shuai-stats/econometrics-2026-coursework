@@ -1,0 +1,9 @@
+博士计量经济学第一次作业：研究设计
+
+请把“学号”文件夹改成自己的完整学号，再填写 report.md。
+也可以用自己排版的 report.pdf 替代 report.md，保留一个主报告即可。
+完成后，将学号文件夹压缩为 学号.zip，通过课程首页提交。
+
+本次不要求回归结果、代码或数据；results 空目录可以忽略。
+需要附加资料时，可放入同一文件夹，并简要注明其用途。
+课程首页：https://github.com/zhang-shuai-stats/econometrics-2026-coursework
