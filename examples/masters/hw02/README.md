@@ -2,7 +2,7 @@
 
 同学们，这个样本按照课件第 18、19 页的两步法，用例 9 的工资模型演示如何得到教育年限 `educ` 的系数。代码只使用 Stata 自带命令，建议先完整运行一遍，再逐段阅读中文注释。
 
-**[查看 do 文件](main.do) · [查看运行结果](results.md) · [查看完整日志](results/run.log) · [下载完整样本](../hw02_sample.zip?raw=true)**
+**[查看 do 文件](main.do) · [查看运行结果](results.md) · [查看完整日志](results/run.log) · [下载完整样本](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/examples/masters/hw02_sample.zip)**
 
 ## 数据和模型
 
@@ -20,6 +20,9 @@ $$wage_i=\beta_0+\beta_1educ_i+\beta_2exper_i+\beta_3abil_i+u_i.$$
 | `abil` | 数据中记录的能力测量指标，未标准化 |
 
 `abil` 是一个能力测量指标，不能视为完全观测了真实能力。本样本只演示 FWL 的计算，不要求满足例 9 讨论遗漏变量偏误时设定的特殊正交条件。
+
+
+需要单独获取数据时，可[下载 HTV.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/HTV.DTA)，也可[查看全部课程数据](../../../data/README.md)。
 
 ## 怎样运行
 

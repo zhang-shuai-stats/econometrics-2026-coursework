@@ -7,7 +7,7 @@ body:
       value: |
         ## 硕士第二次作业：理解 FWL 定理
         同学们，请先阅读[作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/masters/hw02.md)。
-        使用 401K.DTA，比较直接回归和两步法得到的 mrate 系数。
+        使用 [401K.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/401K.DTA)，比较直接回归和两步法得到的 mrate 系数。
         ZIP 内请包含 do 文件和完整运行日志。截止日期：2026 年 10 月 14 日（北京时间）。
         填写学号，上传 ZIP，等待上传完成后点击 Submit new issue。
   - type: input

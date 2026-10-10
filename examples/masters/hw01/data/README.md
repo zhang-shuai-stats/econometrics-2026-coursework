@@ -7,3 +7,5 @@
 原文件包含 526 条观察及 24 个变量。本样本选用 wage、educ、exper、female 四个变量；exper 是潜在工作经验。
 
 SHA-256：`2a21e8971cc071b5215dcc0b0fde901f7c31a6b4d1a3625a83bebb44e5f1b1bc`。
+
+[单独下载 WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA) · [查看全部课程数据](../../../../data/README.md)

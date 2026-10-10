@@ -2,7 +2,10 @@
 
 同学们，这个样本用 WAGE1 数据演示第一次作业的全部步骤。请先运行一遍，再对照中文注释理解每条命令。
 
-**[查看 Stata 代码](main.do) · [查看样本报告](report.md) · [下载完整样本 ZIP](../hw01_sample.zip?raw=true)**
+**[查看 Stata 代码](main.do) · [查看样本报告](report.md) · [下载完整样本 ZIP](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/examples/masters/hw01_sample.zip)**
+
+
+需要单独获取数据时，可[下载 WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA)，也可[查看全部课程数据](../../../data/README.md)。
 
 ## 第一次怎样运行
 

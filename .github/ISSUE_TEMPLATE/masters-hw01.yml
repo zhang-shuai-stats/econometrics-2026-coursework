@@ -7,6 +7,7 @@ body:
       value: |
         ## 硕士第一次作业：认识数据与样本关联
         同学们，请先阅读[作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/masters/hw01.md)。
+        数据：[WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA) · [全部课程数据](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/data/README.md)。
         ZIP 内请包含报告、do 文件、两张图和运行日志。截止时间课堂另行通知。
         填写学号，上传 ZIP，等待上传完成后点击 Submit new issue。
   - type: input

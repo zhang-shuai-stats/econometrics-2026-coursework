@@ -12,24 +12,30 @@
 | 硕士计量经济学 | 第一次作业：认识数据与样本关联 | [作业要求](assignments/masters/hw01.md) · [Stata 参考样本](examples/masters/hw01/README.md) | 课堂另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw01.yml)** |
 | 硕士计量经济学 | 第二次作业：理解 FWL 定理 | [作业要求](assignments/masters/hw02.md) · [Stata 参考样本](examples/masters/hw02/README.md) | 2026 年 10 月 14 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw02.yml)** |
 
+## 课程数据下载
+
+**[查看全部数据目录](data/README.md) · [下载全部数据 ZIP](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/course_data.zip)**
+
+本次作业所需数据可直接下载：[WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA)、[401K.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/401K.DTA)、[HTV.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/HTV.DTA)。下载后按 do 文件中的路径放置。
+
 ## 硕士第二次作业：理解 FWL 定理
 
-请按照第三讲课件第 18、19 页的步骤，使用第 26 页 401(k) 养老金计划的 [401K.DTA 数据](data/401K.DTA?raw=true)，分别用直接回归和两步法得到 `mrate` 的系数，并进行比较。直接回归的模型包含 `mrate`、`age` 和截距。
+请按照第三讲课件第 18、19 页的步骤，使用第 26 页 401(k) 养老金计划的 [401K.DTA 数据](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/401K.DTA)，分别用直接回归和两步法得到 `mrate` 的系数，并进行比较。直接回归的模型包含 `mrate`、`age` 和截距。
 
 本次提交 **do 文件和完整运行日志**，并在 do 文件中用简短注释解释残差含义和系数比较结果。**截止日期为 2026 年 10 月 14 日（北京时间）。** 具体步骤见[作业要求](assignments/masters/hw02.md)。
 
-我用例 9 的工资模型提供了[中文注释参考代码](examples/masters/hw02/main.do)和[实际运行结果](examples/masters/hw02/results.md)。可先[下载样本](examples/masters/hw02_sample.zip?raw=true)，按照[运行说明](examples/masters/hw02/README.md)学习，再完成自己的 401(k) 练习。
+我用例 9 的工资模型提供了[中文注释参考代码](examples/masters/hw02/main.do)和[实际运行结果](examples/masters/hw02/results.md)。可先[下载样本](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/examples/masters/hw02_sample.zip)，按照[运行说明](examples/masters/hw02/README.md)学习，再完成自己的 401(k) 练习。
 
 ## 硕士第一次作业：认识数据与样本关联
 
-请使用 `WAGE1.DTA`，也可自选数据并说明公开来源。完成以下四项内容：
+请使用 [WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA)，也可自选数据并说明公开来源。完成以下四项内容：
 
 1. 变量字典、缺失检查和描述性统计。
 2. 一张分布图、一张关系图及生成它们的 do 文件。
 3. 200 字解释，区分样本关联与因果结论。
 4. 运行日志，说明样本筛选和工作目录。
 
-我提供了带中文注释的 [Stata 代码](examples/masters/hw01/main.do)和[完整样本报告](examples/masters/hw01/report.md)。首次使用 Stata 的同学，可以[下载样本](examples/masters/hw01_sample.zip?raw=true)，按[运行说明](examples/masters/hw01/README.md)先完整运行一遍，再逐段理解。
+我提供了带中文注释的 [Stata 代码](examples/masters/hw01/main.do)和[完整样本报告](examples/masters/hw01/report.md)。首次使用 Stata 的同学，可以[下载样本](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/examples/masters/hw01_sample.zip)，按[运行说明](examples/masters/hw01/README.md)先完整运行一遍，再逐段理解。
 
 ## 博士第一次作业：写出一份清楚的研究设计
 
@@ -61,7 +67,7 @@
 └── report.pdf              # 或 report.md
 ```
 
-如果需要说明数据计划、引用资料或已有代码，可在同一文件夹中补充。也可以下载[博士第一次作业模板](templates/博士作业模板.zip?raw=true)，解压后将“学号”文件夹改成自己的完整学号，再填写报告。
+如果需要说明数据计划、引用资料或已有代码，可在同一文件夹中补充。也可以下载[博士第一次作业模板](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/templates/%E5%8D%9A%E5%A3%AB%E4%BD%9C%E4%B8%9A%E6%A8%A1%E6%9D%BF.zip)，解压后将“学号”文件夹改成自己的完整学号，再填写报告。
 
 硕士第一次作业请同时打包报告、do 文件、两张图和日志，具体结构见[作业要求](assignments/masters/hw01.md)。
 
