@@ -2,7 +2,7 @@
 
 同学们好！本仓库用于财政学、会计学研究生计量经济学课程的作业发布与提交，包含硕士计量经济学和博士计量经济学。
 
-请先阅读本次作业要求，再完成并上传作业。我会通过这里收取大家的报告，并依据课程要求给出反馈。
+请先阅读本次作业要求，再完成并上传作业。我会通过这里收取大家的作业，并依据课程要求给出反馈。
 
 ## 作业入口
 
@@ -10,6 +10,15 @@
 |---|---|---|---|---|
 | 博士计量经济学 | 第一次作业：研究设计 | [作业要求](assignments/doctoral/hw01.md) · [参考样本](assignments/doctoral/第一次作业.md) | 课堂另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=doctoral-hw01.yml)** |
 | 硕士计量经济学 | 第一次作业：认识数据与样本关联 | [作业要求](assignments/masters/hw01.md) · [Stata 参考样本](examples/masters/hw01/README.md) | 课堂另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw01.yml)** |
+| 硕士计量经济学 | 第二次作业：理解 FWL 定理 | [作业要求](assignments/masters/hw02.md) · [Stata 参考样本](examples/masters/hw02/README.md) | 2026 年 10 月 14 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw02.yml)** |
+
+## 硕士第二次作业：理解 FWL 定理
+
+请按照第三讲课件第 18、19 页的步骤，使用第 26 页 401(k) 养老金计划的 [401K.DTA 数据](data/401K.DTA?raw=true)，分别用直接回归和两步法得到 `mrate` 的系数，并进行比较。直接回归的模型包含 `mrate`、`age` 和截距。
+
+本次提交 **do 文件和完整运行日志**，并在 do 文件中用简短注释解释残差含义和系数比较结果。**截止日期为 2026 年 10 月 14 日（北京时间）。** 具体步骤见[作业要求](assignments/masters/hw02.md)。
+
+我用例 9 的工资模型提供了[中文注释参考代码](examples/masters/hw02/main.do)和[实际运行结果](examples/masters/hw02/results.md)。可先[下载样本](examples/masters/hw02_sample.zip?raw=true)，按照[运行说明](examples/masters/hw02/README.md)学习，再完成自己的 401(k) 练习。
 
 ## 硕士第一次作业：认识数据与样本关联
 
@@ -41,7 +50,7 @@
 
 首次使用请注册并登录 GitHub。这个课程仓库是公开的，登录后即可使用作业表单，无需加入仓库或创建自己的仓库。
 
-1. **整理作业。** 新建一个以完整学号命名的文件夹，放入报告，再压缩为 `学号.zip`，例如 `2026001001.zip`。报告可用 PDF 或 Markdown；选择一种即可。
+1. **整理作业。** 新建一个以完整学号命名的文件夹，放入本次作业要求的文件，再压缩为 `学号.zip`，例如 `2026001001.zip`。需要提交报告的作业，可用 PDF 或 Markdown；选择一种即可。
 2. **上传文件。** 点击上方“点击提交作业”，填写学号，选择或拖入 ZIP。保留页面预填的标题，等待文件上传完成。
 3. **确认提交。** 点击 **Submit new issue**（提交）。看到带编号的提交记录，并确认其中有自己的 ZIP 附件，即完成提交。请保留该页面作为回执，无需另外发送链接。
 
@@ -56,12 +65,14 @@
 
 硕士第一次作业请同时打包报告、do 文件、两张图和日志，具体结构见[作业要求](assignments/masters/hw01.md)。
 
+硕士第二次作业提交 do 文件和完整运行日志，具体结构见[作业要求](assignments/masters/hw02.md)。
+
 请用完整学号命名文件夹和 ZIP 文件。只上传本次作业需要的材料，建议 ZIP 不超过 20 MB。
 
 ## 修改和截止时间
 
 - 需要修改时，请重新点击本次作业入口，上传完整的新 ZIP，生成一条新记录；不要编辑旧记录或替换旧附件。
-- 截止时间将在课堂及本页另行公布。公布后，原则上以截止前最后一次有效提交作为评分版本。
+- 各次作业的截止日期见上方作业入口及对应作业要求；尚未注明的将在课堂及本页公布。原则上以截止前最后一次有效提交作为评分版本。
 - 提交时间以 GitHub 新记录的创建时间为依据，统一按北京时间核对；旧记录被编辑或存在特殊情况时，我会另行核实。
 - 如遇上传失败、附件缺失或其他问题，请及时在课堂或通过课程联系渠道说明。
 

@@ -1,0 +1,28 @@
+name: "硕士计量经济学 · 第二次作业"
+description: "提交 401(k) 数据的 FWL 练习：do 文件与完整运行日志。"
+title: "[masters-hw02] FWL 定理作业"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 硕士第二次作业：理解 FWL 定理
+        同学们，请先阅读[作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/masters/hw02.md)。
+        使用 401K.DTA，比较直接回归和两步法得到的 mrate 系数。
+        ZIP 内请包含 do 文件和完整运行日志。截止日期：2026 年 10 月 14 日（北京时间）。
+        填写学号，上传 ZIP，等待上传完成后点击 Submit new issue。
+  - type: input
+    id: student_id
+    attributes:
+      label: "学号"
+      description: "请用完整学号命名文件夹和 ZIP 文件。"
+      placeholder: "例如 2026001001"
+    validations:
+      required: true
+  - type: upload
+    id: assignment_file
+    attributes:
+      label: "作业文件"
+      description: "请上传一个 学号.zip，包含 main.do 和 results/run.log，建议不超过 20 MB。"
+    validations:
+      required: true
+      accept: ".zip"
