@@ -22,7 +22,7 @@ $$wage_i=\beta_0+\beta_1educ_i+\beta_2exper_i+\beta_3abil_i+u_i.$$
 `abil` 是一个能力测量指标，不能视为完全观测了真实能力。本样本只演示 FWL 的计算，不要求满足例 9 讨论遗漏变量偏误时设定的特殊正交条件。
 
 
-需要单独获取数据时，可[下载 HTV.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/HTV.DTA)，也可[查看全部课程数据](../../../data/README.md)。
+需要单独获取数据时，可[下载 HTV.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/HTV.DTA)，也可[查看全部课程数据](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/data/README.md)。
 
 ## 怎样运行
 
@@ -64,4 +64,4 @@ Stata 的 `regress` 默认包含截距。`predict` 使用最近一次回归的�
 
 请完整修改数据路径、变量名称、控制变量和最后显示的文字，再运行自己的程序。你的提交应包含 401(k) 作业的 do 文件和运行日志。
 
-[查看第二次作业要求](../../../assignments/masters/hw02.md) · [返回课程首页](../../../README.md)
+[查看第二次作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/masters/hw02.md) · [返回课程首页](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/README.md)

@@ -5,7 +5,7 @@
 **[查看 Stata 代码](main.do) · [查看样本报告](report.md) · [下载完整样本 ZIP](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/examples/masters/hw01_sample.zip)**
 
 
-需要单独获取数据时，可[下载 WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA)，也可[查看全部课程数据](../../../data/README.md)。
+需要单独获取数据时，可[下载 WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA)，也可[查看全部课程数据](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/data/README.md)。
 
 ## 第一次怎样运行
 
@@ -58,4 +58,4 @@ do "main.do"
 
 200 字解释见报告第 5 节；解释需要同学根据自己的图表判断和书写，Stata 负责计算与画图。更换变量或自选数据时，请同步修改数据路径、变量名称、标签、筛选规则及结果解释。
 
-[查看本次作业要求](../../../assignments/masters/hw01.md) · [返回课程首页](../../../README.md)
+[查看本次作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/masters/hw01.md) · [返回课程首页](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/README.md)

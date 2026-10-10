@@ -6,4 +6,4 @@
 
 SHA-256：`10c819b9cab79a50072009db46a91ee59478adaf1c106f1a2cd1d98f84b25918`。
 
-[单独下载 HTV.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/HTV.DTA) · [查看全部课程数据](../../../../data/README.md)
+[单独下载 HTV.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/HTV.DTA) · [查看全部课程数据](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/data/README.md)

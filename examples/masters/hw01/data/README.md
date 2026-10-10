@@ -8,4 +8,4 @@
 
 SHA-256：`2a21e8971cc071b5215dcc0b0fde901f7c31a6b4d1a3625a83bebb44e5f1b1bc`。
 
-[单独下载 WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA) · [查看全部课程数据](../../../../data/README.md)
+[单独下载 WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA) · [查看全部课程数据](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/data/README.md)
