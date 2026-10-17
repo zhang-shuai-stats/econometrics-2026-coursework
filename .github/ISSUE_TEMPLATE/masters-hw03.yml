@@ -1,0 +1,29 @@
+name: "硕士计量经济学 · 第三次作业"
+description: "提交系数方差练习：详细计算报告、Stata do 文件和运行日志，使用 Excel 时附计算工作簿。"
+title: "[masters-hw03] 系数方差作业"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 硕士第三次作业：理解估计系数的方差
+        同学们，请先阅读[作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/masters/hw03.md)。
+        使用 [401K.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/401K.DTA)，按照课件第 64、65 页，分别用代数方法和矩阵运算计算 mrate、age 系数的标准误，并与 Stata 默认回归结果比较。完整模型为 prate 对 mrate、age 和截距的回归。
+        ZIP 内请包含详细计算报告（PDF 或 Markdown）、Stata 部分的 do 文件和完整运行日志。矩阵运算可使用 Excel；使用时请附上保留输入数据和公式的 Excel 文件。
+        报告开头请注明姓名、完整学号和作业名称。截止日期：2026 年 10 月 21 日（北京时间）。
+        填写学号，上传 ZIP，等待上传完成后点击 Submit new issue。
+  - type: input
+    id: student_id
+    attributes:
+      label: "学号"
+      description: "请用完整学号命名文件夹和 ZIP 文件。"
+      placeholder: "例如 2026001001"
+    validations:
+      required: true
+  - type: upload
+    id: assignment_file
+    attributes:
+      label: "作业文件"
+      description: "请上传一个 学号.zip，包含 report.pdf（或 report.md）、main.do 和 results/run.log；使用 Excel 时另含 calculation.xlsx。建议不超过 20 MB。"
+    validations:
+      required: true
+      accept: ".zip"

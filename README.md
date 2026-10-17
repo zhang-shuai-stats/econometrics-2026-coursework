@@ -11,12 +11,21 @@
 | 博士计量经济学 | 第一次作业：研究设计 | [作业要求](assignments/doctoral/hw01.md) · [参考样本](assignments/doctoral/第一次作业.md) | 课堂另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=doctoral-hw01.yml)** |
 | 硕士计量经济学 | 第一次作业：认识数据与样本关联 | [作业要求](assignments/masters/hw01.md) · [Stata 参考样本](examples/masters/hw01/README.md) | 课堂另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw01.yml)** |
 | 硕士计量经济学 | 第二次作业：理解 FWL 定理 | [作业要求](assignments/masters/hw02.md) · [Stata 参考样本](examples/masters/hw02/README.md) | 2026 年 10 月 14 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw02.yml)** |
+| 硕士计量经济学 | 第三次作业：理解估计系数的方差 | [作业要求](assignments/masters/hw03.md) | 2026 年 10 月 21 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw03.yml)** |
 
 ## 课程数据下载
 
 **[查看全部数据目录](data/README.md) · [下载全部数据 ZIP](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/course_data.zip)**
 
 本次作业所需数据可直接下载：[WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA)、[401K.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/401K.DTA)、[HTV.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/HTV.DTA)。下载后按 do 文件中的路径放置。
+
+## 硕士第三次作业：理解估计系数的方差
+
+请按照第三讲课件第 64、65 页的内容，继续使用 [401K.DTA 数据](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/401K.DTA)，估计包含 `mrate`、`age` 和截距的参与率模型。记录两个系数及其 Stata 标准误，再分别用**代数方法和矩阵运算**计算两个系数的标准误，与 Stata 默认的 OLS 结果比较。
+
+本次请提交**详细计算报告、Stata do 文件和完整运行日志**。报告须列出公式、中间量、数值代入和结果比较，说明残差自由度为什么是 `n-3`。矩阵运算可用 Stata 或 Excel；使用 Excel 时，请一并提交保留输入数据和计算公式的 `.xlsx` 文件。具体计算和提交要求见[作业要求](assignments/masters/hw03.md)。
+
+**截止日期为 2026 年 10 月 21 日（北京时间）。** 报告开头请注明姓名、完整学号和作业名称，完成后从[第三次作业提交入口](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw03.yml)上传材料。
 
 ## 硕士第二次作业：理解 FWL 定理
 
@@ -72,6 +81,8 @@
 硕士第一次作业请同时打包报告、do 文件、两张图和日志，具体结构见[作业要求](assignments/masters/hw01.md)。
 
 硕士第二次作业提交 do 文件和完整运行日志，具体结构见[作业要求](assignments/masters/hw02.md)。
+
+硕士第三次作业请打包详细计算报告、Stata do 文件和完整运行日志；使用 Excel 计算矩阵的同学，还需附上保留输入数据和公式的 `.xlsx` 文件。具体结构见[作业要求](assignments/masters/hw03.md)。
 
 请用完整学号命名文件夹和 ZIP 文件。只上传本次作业需要的材料，建议 ZIP 不超过 20 MB。
 
