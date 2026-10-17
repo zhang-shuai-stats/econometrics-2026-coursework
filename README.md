@@ -9,6 +9,7 @@
 | 课程 | 作业 | 要求与样本 | 截止时间（北京时间） | 提交 |
 |---|---|---|---|---|
 | 博士计量经济学 | 第一次作业：研究设计 | [作业要求](assignments/doctoral/hw01.md) · [参考样本](assignments/doctoral/第一次作业.md) | 课堂另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=doctoral-hw01.yml)** |
+| 博士计量经济学 | 第二次作业：固定效应面板数据模型的估计与分析 | [作业要求](assignments/doctoral/hw02.md) | 另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=doctoral-hw02.yml)** |
 | 硕士计量经济学 | 第一次作业：认识数据与样本关联 | [作业要求](assignments/masters/hw01.md) · [Stata 参考样本](examples/masters/hw01/README.md) | 课堂另行通知 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw01.yml)** |
 | 硕士计量经济学 | 第二次作业：理解 FWL 定理 | [作业要求](assignments/masters/hw02.md) · [Stata 参考样本](examples/masters/hw02/README.md) | 2026 年 10 月 14 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw02.yml)** |
 | 硕士计量经济学 | 第三次作业：理解估计系数的方差 | [作业要求](assignments/masters/hw03.md) | 2026 年 10 月 21 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw03.yml)** |
@@ -18,6 +19,16 @@
 **[查看全部数据目录](data/README.md) · [下载全部数据 ZIP](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/course_data.zip)**
 
 本次作业所需数据可直接下载：[WAGE1.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/WAGE1.DTA)、[401K.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/401K.DTA)、[HTV.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/HTV.DTA)。下载后按 do 文件中的路径放置。
+
+## 博士第二次作业：固定效应面板数据模型的估计与分析
+
+请承接第一次作业的研究设计，围绕自己的研究问题收集真实面板数据，使用 Stata 分别估计**混合 OLS、个体固定效应和双向固定效应模型**。保持三个模型的变量口径和估计样本一致，采用并说明合适的聚类标准误，比较核心系数、经济量级和估计的不确定性。
+
+请在报告中写清数据来源、面板结构和处理过程，解释固定效应控制了哪些差异、系数依靠哪些变化估计，并结合原研究设计讨论识别条件与局限。请如实报告不显著或与预期不同的结果，明确区分样本关联与因果结论。
+
+本次提交**分析报告、Stata do 文件、完整运行日志、回归结果表，以及分析数据或获取说明**。可公开分享的数据请附在材料中；受限数据不要公开上传，请写清获取条件和处理流程，按课堂安排提供核验材料。报告开头注明姓名、完整学号和作业名称。具体要求见[作业要求](assignments/doctoral/hw02.md)。
+
+**截止时间：另行通知。** 完成后从[博士第二次作业提交入口](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=doctoral-hw02.yml)上传材料。
 
 ## 硕士第三次作业：理解估计系数的方差
 
@@ -77,6 +88,8 @@
 ```
 
 如果需要说明数据计划、引用资料或已有代码，可在同一文件夹中补充。也可以下载[博士第一次作业模板](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/templates/%E5%8D%9A%E5%A3%AB%E4%BD%9C%E4%B8%9A%E6%A8%A1%E6%9D%BF.zip)，解压后将“学号”文件夹改成自己的完整学号，再填写报告。
+
+博士第二次作业请打包分析报告、Stata do 文件、完整运行日志、回归结果表，以及可公开分享的分析数据或数据获取说明。受限数据不要公开上传，具体结构和核验要求见[作业要求](assignments/doctoral/hw02.md)。
 
 硕士第一次作业请同时打包报告、do 文件、两张图和日志，具体结构见[作业要求](assignments/masters/hw01.md)。
 

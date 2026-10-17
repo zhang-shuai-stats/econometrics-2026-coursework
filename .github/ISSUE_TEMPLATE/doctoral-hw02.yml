@@ -1,0 +1,29 @@
+name: "博士计量经济学 · 第二次作业"
+description: "提交固定效应面板分析：报告、Stata do 文件、完整日志、结果表及分析数据或获取说明。"
+title: "[doctoral-hw02] 固定效应面板作业"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 博士第二次作业：固定效应面板数据模型的估计与分析
+        同学们，请先阅读[作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/doctoral/hw02.md)。
+        请延续第一次作业的研究问题，收集真实面板数据，使用 Stata 估计混合 OLS、个体固定效应和双向固定效应模型，比较并分析结果，说明识别条件及局限。
+        ZIP 内请包含分析报告（PDF 或 Markdown）、Stata do 文件、完整运行日志、回归结果表，以及可公开分享的分析数据或数据获取与处理说明。受限数据不要公开上传。
+        报告开头请注明姓名、完整学号和作业名称。截止时间：另行通知。
+        保留默认标题，填写学号并上传 ZIP，等待上传完成后点击提交。
+  - type: input
+    id: student_id
+    attributes:
+      label: "学号"
+      description: "请用完整学号命名文件夹和 ZIP 文件。"
+      placeholder: "例如 2026001001"
+    validations:
+      required: true
+  - type: upload
+    id: assignment_file
+    attributes:
+      label: "作业文件"
+      description: "请上传一个 学号.zip，包含分析报告、main.do、完整日志、结果表及分析数据或获取说明，建议不超过 20 MB。等待上传完成后再提交。"
+    validations:
+      required: true
+      accept: ".zip"
