@@ -1,0 +1,29 @@
+name: "硕士计量经济学 · 第四次作业"
+description: "提交完整 OLS 回归结果练习：详细计算报告、原始计算文件、运行结果及 Stata 核对输出。"
+title: "[masters-hw04] 完整 OLS 回归结果作业"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 硕士第四次作业：计算并理解完整的 OLS 回归结果
+        同学们，请先阅读[作业要求](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/blob/main/assignments/masters/hw04.md)。
+        使用 [401K.DTA](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/401K.DTA)，从数据出发计算 regress prate mrate age 的全部输出，包括三个系数（含截距）的估计与检验、平方和分解表、整体 F 检验及相关拟合指标，并逐项与 Stata 完整输出核对。
+        计算可以使用任何软件。ZIP 内请包含详细计算报告（PDF 或 Markdown）、原始计算文件、可阅读的运行结果，以及 Stata 完整核对输出。使用 Excel 时保留输入数据、中间量和公式；使用 Stata 时提交 do 文件及完整日志；其他软件提交程序或笔记本及运行输出。
+        报告开头请注明姓名、完整学号和作业名称。截止日期：2026 年 11 月 18 日（北京时间）。
+        请将上述材料放入以完整学号命名的文件夹，压缩为 学号.zip。填写学号，上传 ZIP，等待上传完成后点击 Submit new issue；提交后确认记录中可以看到自己的附件。
+  - type: input
+    id: student_id
+    attributes:
+      label: "学号"
+      description: "请用完整学号命名文件夹和 ZIP 文件。"
+      placeholder: "例如 2026001001"
+    validations:
+      required: true
+  - type: upload
+    id: assignment_file
+    attributes:
+      label: "作业文件"
+      description: "请上传一个 学号.zip，包含详细计算报告、原始计算文件、运行结果和 Stata 核对输出。计算不限软件，建议不超过 20 MB。"
+    validations:
+      required: true
+      accept: ".zip"
