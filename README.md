@@ -14,6 +14,7 @@
 | 硕士计量经济学 | 第二次作业：理解 FWL 定理 | [作业要求](assignments/masters/hw02.md) · [Stata 参考样本](examples/masters/hw02/README.md) | 2026 年 10 月 14 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw02.yml)** |
 | 硕士计量经济学 | 第三次作业：理解估计系数的方差 | [作业要求](assignments/masters/hw03.md) | 2026 年 10 月 21 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw03.yml)** |
 | 硕士计量经济学 | 第四次作业：计算并理解完整的 OLS 回归结果 | [作业要求](assignments/masters/hw04.md) | 2026 年 11 月 18 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw04.yml)** |
+| 硕士计量经济学 | 第五次作业：计算并理解异方差稳健标准误 | [作业要求](assignments/masters/hw05.md) | 2026 年 12 月 2 日 | **[点击提交作业](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw05.yml)** |
 
 ## 课程数据下载
 
@@ -30,6 +31,16 @@
 本次提交**分析报告、Stata do 文件、完整运行日志、回归结果表，以及分析数据或获取说明**。可公开分享的数据请附在材料中；受限数据不要公开上传，请写清获取条件和处理流程，按课堂安排提供核验材料。报告开头注明姓名、完整学号和作业名称。具体要求见[作业要求](assignments/doctoral/hw02.md)。
 
 **截止时间：另行通知。** 完成后从[博士第二次作业提交入口](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=doctoral-hw02.yml)上传材料。
+
+## 硕士第五次作业：计算并理解异方差稳健标准误
+
+请按照第七讲“OLS 估计后的异方差稳健推断”部分的方法，继续使用 [401K.DTA 数据](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/raw/refs/heads/main/data/401K.DTA)，分别用**代数方法和矩阵方法**计算 `mrate`、`age` 和截距三个系数的异方差稳健标准误。完整模型为 `prate` 对 `mrate`、`age` 和截距的 OLS 回归。
+
+请详细列出完整模型残差、辅助回归残差、乘积求和及矩阵运算的计算步骤，分别计算 HC0 和经过自由度修正的 HC1 方差与标准误，并将 HC1 标准误与 `regress prate mrate age, vce(robust)` 的结果逐项核对。
+
+本次请提交**详细计算报告、原始计算文件、运行结果和 Stata 核对输出**。计算可以使用 Stata、Excel、Python、R 或其他软件；使用 Excel 时保留输入数据、中间量和公式。报告开头请注明姓名、完整学号和作业名称。具体要求见[第五次作业要求](assignments/masters/hw05.md)。
+
+**截止日期为 2026 年 12 月 2 日（北京时间）。** 请将材料整理为 `学号.zip`，从[第五次作业提交入口](https://github.com/zhang-shuai-stats/econometrics-2026-coursework/issues/new?template=masters-hw05.yml)上传。
 
 ## 硕士第四次作业：计算并理解完整的 OLS 回归结果
 
@@ -107,6 +118,8 @@
 硕士第三次作业请打包详细计算报告、Stata do 文件和完整运行日志；使用 Excel 计算矩阵的同学，还需附上保留输入数据和公式的 `.xlsx` 文件。具体结构见[作业要求](assignments/masters/hw03.md)。
 
 硕士第四次作业请打包详细计算报告、原始计算文件、运行结果和 Stata 核对输出。计算不限软件，具体要求见[作业要求](assignments/masters/hw04.md)。
+
+硕士第五次作业请打包详细计算报告、代数法和矩阵法的原始计算文件、运行结果，以及常规 OLS 与 `vce(robust)` 两条 Stata 命令的完整核对输出。具体要求见[作业要求](assignments/masters/hw05.md)。
 
 请用完整学号命名文件夹和 ZIP 文件。只上传本次作业需要的材料，建议 ZIP 不超过 20 MB。
 
